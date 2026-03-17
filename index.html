@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Datas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-geral">
+            <header>
+                <form action="">
+                    <p>Day</p>
+                    <input type="number" name="day" id="day" placeholder="DD">
+                    <span id="error-msg-day"></span>
+                </form>
+                <form action="">
+                    <p>Month</p>
+                    <input type="number" name="month" id="month" placeholder="MM">
+                    <span id="error-msg-month"></span>
+                </form>
+                <form action="">
+                    <p>Year</p>
+                    <input type="number" name="year" id="year" placeholder="YYYY">
+                    <span id="error-msg-year"></span>
+                </form>
+                <button class="btn-results" id="btn-results"><img src="assets/icon-arrow.svg" alt=""></button>
+            </header>
+            <main>
+                <div class="data-results">
+                    <div class="years-info"><p id="years-info">- -</p></div>
+                    <h4>years</h4>
+                </div>
+                <div class="data-results" >
+                    <div class="months-info"><p id="months-info">- -</p></div>
+                    <h4>months</h4>
+                </div>
+                <div class="data-results">
+                    <div class="days-info"><p id="days-info">- -</p></div>
+                    <h4>days</h4>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
